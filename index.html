@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naka Ken - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Naka Ken</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Naka Ken</h1>
+                <p>Web Engineer</p>
+                <p class="description">
+                    10年以上の実務経験で培った確かな技術力、1500万人規模のサービス開発で培った堅牢な設計力、
+                    そして現場で高く評価されるコミュニケーション能力で、お客様のビジョンを確実なカタチにします。<br><br>
+                    本業ではエンジニア以外の業種の方とも多くやりとりをしているので、<br>
+                    技術的な小難しい話を分かりやすく伝えることが得意です。<br>
+                    また、AI技術を積極的に活用しているため実装スピードにも自信があります。<br><br>
+                    まずはお気軽にお問い合わせください。
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>React / Next.js</li>
+                        <li>jQuery</li>
+                        <li>Tailwind CSS</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>PHP / Laravel</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>Perl</li>
+                        <li>MySQL / PostgreSQL</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>クロール / スクレイピング</li>
+                        <li>Chrome拡張機能</li>
+                        <li>Google Apps Script</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <h2>Works</h2>
+            
+            <!-- ツールカテゴリー -->
+            <div class="works-category">
+                <h3>ツール開発</h3>
+                <div class="works-slider">
+                    <div class="works-track">
+                        <div class="work-item">
+                            <div class="image-gallery-container">
+                                <div class="image-gallery">
+                                    <div class="gallery-item">
+                                        <img src="images/gmail-reply-assistant/popup.png" alt="ポップアップ">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">ポップアップ</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/gmail-reply-assistant/panel.png" alt="アシスタントパネル">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">アシスタントパネル</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/gmail-reply-assistant/example_positive.png" alt="使用イメージ(肯定)">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">使用イメージ(肯定)</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/gmail-reply-assistant/example_negative.png" alt="使用イメージ(否定)">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">使用イメージ(否定)</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/gmail-reply-assistant/example_custom.png" alt="使用イメージ(カスタム)">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">使用イメージ(カスタム)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-dots">
+                                    <span class="gallery-dot active"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                </div>
+                                <button class="view-demo" data-demo="images/gmail-reply-assistant/demo.gif">
+                                    <i class="fas fa-play"></i> 動作デモ
+                                </button>
+                            </div>
+                            <h3>Gmail返信アシスタント</h3>
+                            <p class="work-description">
+                                Gmailの返信作成を効率化するChrome拡張機能。会話の文脈を自動で分析し、AIを活用して適切な返信文を生成します。
+                                「肯定的」「否定的」なボタン選択だけで状況に合った返信を自動生成できるほか、ユーザーが方向性を指定すれば
+                                それに沿った詳細な文章を作成。DifyでAPIを構築し、複数メッセージの文脈を考慮した高品質な返信を実現しています。
+                            </p>
+                            <div class="work-tech">
+                                <span>JavaScript</span>
+                                <span>Chrome Extension API</span>
+                                <span>Dify</span>
+                                <span>REST API</span>
+                                <span>Gmail API</span>
+                            </div>
+                        </div>
+
+                        <div class="work-item">
+                            <div class="image-gallery-container">
+                                <div class="image-gallery">
+                                    <div class="gallery-item">
+                                        <img src="images/x-bookmark-exporter/popup.png" alt="ポップアップ">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">ポップアップ</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/x-bookmark-exporter/export.png" alt="ブックマークのエクスポート処理">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">エクスポート処理の実行中</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/x-bookmark-exporter/spreadsheet.png" alt="エクスポートされたスプレッドシート">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">エクスポート結果のスプレッドシート</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-dots">
+                                    <span class="gallery-dot active"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                </div>
+                                <button class="view-demo" data-demo="images/x-bookmark-exporter/demo.gif">
+                                    <i class="fas fa-play"></i> 動作デモ
+                                </button>
+                            </div>
+                            <h3>X ブックマークエクスポーター</h3>
+                            <p class="work-description">
+                                Xのブックマークを効率的にGoogleスプレッドシートに一括エクスポートするChrome拡張機能。
+                                自動スクロール機能により全てのブックマークを取得し、投稿本文、URL、メディアURL、保存日時を
+                                スプレッドシートに整理して出力します。バックグラウンド処理により大量のブックマークも安定して
+                                エクスポートできます。
+                            </p>
+                            <div class="work-tech">
+                                <span>JavaScript</span>
+                                <span>Chrome Extension API</span>
+                                <span>Google Sheets API</span>
+                                <span>OAuth 2.0</span>
+                                <span>Async/Await</span>
+                            </div>
+                        </div>
+
+                        <div class="work-item">
+                            <div class="image-gallery-container">
+                                <div class="image-gallery">
+                                    <div class="gallery-item">
+                                        <img src="images/insta-scraper/main.png" alt="Instagramスクレイパーのメイン画面">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">メイン画面</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/insta-scraper/spreadsheet.png" alt="スプレッドシートの出力結果">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">出力されたスプレッドシート</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-dots">
+                                    <span class="gallery-dot active"></span>
+                                    <span class="gallery-dot"></span>
+                                </div>
+                                <button class="view-demo" data-demo="images/insta-scraper/demo.gif">
+                                    <i class="fas fa-play"></i> 動作デモ
+                                </button>
+                            </div>
+                            <h3>Instagram アカウント情報スクレイパー</h3>
+                            <p class="work-description">
+                                Instagramのアカウント情報を効率的に収集し、Googleスプレッドシートに出力するデスクトップアプリケーション。
+                                複数アカウントの一括処理、フォロワー数、プロフィール文、電話番号の自動抽出機能を搭載。
+                                CustomTkinterを使用したモダンなUI、自動ログイン機能、設定保存機能により、
+                                効率的なデータ収集を実現します。
+                            </p>
+                            <div class="work-tech">
+                                <span>Python</span>
+                                <span>CustomTkinter</span>
+                                <span>Selenium</span>
+                                <span>Google Sheets API</span>
+                                <span>Threading</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-nav prev" aria-label="前へ">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-nav next" aria-label="次へ">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Web制作カテゴリー -->
+            <div class="works-category">
+                <h3>Web制作/システム開発</h3>
+                <div class="works-slider">
+                    <div class="works-track">
+                        <div class="work-item">
+                            <div class="image-gallery-container">
+                                <div class="image-gallery">
+                                    <div class="gallery-item">
+                                        <img src="images/techstyle-shop/first.png" alt="ファーストビュー">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">ファーストビュー</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/techstyle-shop/products.png" alt="商品一覧">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">商品一覧</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/techstyle-shop/cart.png" alt="カート">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">カート</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-dots">
+                                    <span class="gallery-dot active"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                </div>
+                                <button class="view-demo" data-demo="images/techstyle-shop/demo.gif">
+                                    <i class="fas fa-play"></i> 動作デモ
+                                </button>
+                            </div>
+                            <h3>Tech Style Shop</h3>
+                            <p class="work-description">
+                                Next.js、TypeScript、Prismaを使用したモダンなECサイト。
+                                会員登録、ログイン機能、商品管理、カート機能、注文管理、Stripe決済などの基本的なEC機能を実装。
+                                レスポンシブデザインとモダンなUI/UXを意識した設計。
+                                ※スキル向上を目的とした架空のプロジェクトです。
+                            </p>
+                            <div class="work-tech">
+                                <span class="en">Next.js</span>
+                                <span class="en">TypeScript</span>
+                                <span class="en">Prisma</span>
+                                <span class="en">Tailwind CSS</span>
+                                <span class="en">Stripe</span>
+                            </div>
+                        </div>
+
+                        <div class="work-item">
+                            <div class="image-gallery-container">
+                                <div class="image-gallery">
+                                    <div class="gallery-item">
+                                        <img src="images/event-landing-page/first.png" alt="ファーストビュー">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">ファーストビュー</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/event-landing-page/speakers.png" alt="スピーカー">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">スピーカー</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/event-landing-page/timetable.png" alt="タイムテーブル">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">タイムテーブル</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/event-landing-page/venue.png" alt="会場">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">会場</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-dots">
+                                    <span class="gallery-dot active"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                </div>
+                                <button class="view-demo" data-demo="images/event-landing-page/demo.gif">
+                                    <i class="fas fa-play"></i> 動作デモ
+                                </button>
+                            </div>
+                            <h3>テックカンファレンス2024</h3>
+                            <p class="work-description">
+                                Next.js、TypeScript、Tailwind CSSを使用したイベントランディングページ。
+                                Framer Motionによるスムーズなアニメーション、Google Maps APIの統合、
+                                レスポンシブデザインを実装。参加者が必要な情報を直感的に得られるUIを目指しました。
+                                ※スキル向上を目的とした架空のプロジェクトです。
+                            </p>
+                            <div class="work-tech">
+                                <span class="en">Next.js</span>
+                                <span class="en">TypeScript</span>
+                                <span class="en">Tailwind CSS</span>
+                                <span class="en">Framer Motion</span>
+                                <span class="en">Google Maps API</span>
+                            </div>
+                        </div>
+
+                        <div class="work-item">
+                            <div class="image-gallery-container">
+                                <div class="image-gallery">
+                                    <div class="gallery-item">
+                                        <img src="images/photographer-portfolio/first.png" alt="ファーストビュー">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">ファーストビュー</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/photographer-portfolio/gallery.png" alt="ギャラリー">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">ギャラリー</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/photographer-portfolio/service.png" alt="サービス">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">サービス</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/photographer-portfolio/process.png" alt="撮影の流れ">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-caption">撮影の流れ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-dots">
+                                    <span class="gallery-dot active"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                    <span class="gallery-dot"></span>
+                                </div>
+                                <button class="view-demo" data-demo="images/photographer-portfolio/demo.gif">
+                                    <i class="fas fa-play"></i> 動作デモ
+                                </button>
+                            </div>
+                            <h3>フォトグラファーポートフォリオ</h3>
+                            <p class="work-description">
+                                Next.jsとTailwind CSSを使用したフォトグラファーのポートフォリオサイト。
+                                Framer Motionによるスムーズなアニメーション、レスポンシブデザイン、
+                                画像ギャラリー機能を実装。作品とサービス内容が分かりやすく伝わることを意識しました。
+                                ※スキル向上を目的とした架空のプロジェクトです。
+                            </p>
+                            <div class="work-tech">
+                                <span class="en">Next.js</span>
+                                <span class="en">TypeScript</span>
+                                <span class="en">Tailwind CSS</span>
+                                <span class="en">Framer Motion</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="slider-nav prev" aria-label="前へ">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-nav next" aria-label="次へ">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- モーダル -->
+        <div id="image-modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+        </div>
+
+        <div id="video-modal" class="modal">
+            <span class="close">&times;</span>
+            <video id="modal-video" controls>
+                <source src="" type="video/mp4">
+                お使いのブラウザは動画の再生に対応していません。
+            </video>
+        </div>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p>お問い合わせは以下のメールアドレスまでお願いします。</p>
+                <a href="mailto:murata1991jp@gmail.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> メールを送る
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Naka Ken. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html> 
